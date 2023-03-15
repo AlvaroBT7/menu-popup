@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
+body {
+  background: url("https://wallpapercave.com/wp/wp6852847.jpg") no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 100px;
+}
+
+img.logo {
+  width: 100px;
+  height: 100px;
+  animation-name: logo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.navigation .a-container {
+  display: inline-block;
+}
+
+.navigation .a-container a,
+div {
+  margin: 12px 0;
+}
+
+.navigation .a-container div.underlined {
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.2s;
+}
+
+.navigation .a-container:hover > div.underlined {
+  width: 100%;
+}
+
+.navigation .a-container a {
+  font-size: 16px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-width: 0%;
+  position: relative;
+  top: 0;
+  transition: all 0.2s;
+}
+
+.navigation .a-container a:hover {
+  color: #fffc;
+  position: relative;
+  top: -3px;
+}
+
+.navigation button.btnLogin-popup {
+  margin-left: 15px;
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #ffffff0a;
+  border: 2px solid #fff;
+  color: #fff;
+  backdrop-filter: blur(2px);
+  transition: all 0.2s;
+}
+
+.navigation button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* main {
+  
+} */
+
+#popup-container {
+  --width: 360px;
+  --height: 470px;
+
+  color: #fff;
+
+  position: fixed;
+  display: none;
+  width: var(--width);
+  height: var(--height);
+
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  border: 2px solid #fff3;
+  backdrop-filter: blur(10px);
+  background-color: #fff2;
+
+  border-radius: 20px;
+
+  padding: 35px;
+}
+
+#popup-container.show {
+  display: inline-block;
+}
+
+#menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-button i {
+  font-size: 20px;
+}
+
+#popup-container h3,
+input {
+  margin: 10px 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#popup-container form {
+  text-align: center;
+}
+
+#popup-container form input {
+  text-align: left;
+  margin: 10px 0;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 1px solid #fff5;
+  width: 100%;
+  font-size: 14px;
+}
+
+#popup-container form input::placeholder {
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+#popup-container form input:focus::placeholder {
+  color: #fff;
+}
+
+#popup-container form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 35px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+#popup-container form button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+@keyframes logo {
+  to {
+    transform: rotate(360deg);
+  }
+}
